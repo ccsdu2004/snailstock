@@ -1,0 +1,5 @@
+command=¾ùÏß½ð²æ
+type=common
+arguments=short,long,offset
+items=ma,short,offset>ma,long,offset
+items=ma,short,offset-1<ma,long,offset-1

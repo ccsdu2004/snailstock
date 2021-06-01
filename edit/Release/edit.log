@@ -1,0 +1,3 @@
+﻿  edit.cpp
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(F:\StockCode\snailstock\edit\Win32\Release\edit.exe) does not match the Linker's OutputFile property value (F:\StockCode\snailstock\output\edit.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+  edit.vcxproj -> F:\StockCode\snailstock\edit\Win32\Release\edit.exe

@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>QtVS_v303</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <ReferencePath>E:\c++lib\2015;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>E:\c++header;$(IncludePath)</IncludePath>
+    <ReferencePath>E:\c++lib\vc7.1;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>$(DefaultQtVersion)</QtInstall>
+    <QtModules>charts;concurrent;network;uitools</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtInstall>$(DefaultQtVersion)</QtInstall>
+    <QtModules>uitools;charts</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\GeneratedFiles\$(ConfigurationName)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>.\GeneratedFiles</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\GeneratedFiles</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName);D:\Python27\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\output\snail.exe</OutputFile>
+      <AdditionalLibraryDirectories>E:\c++lib\2015;D:\Python27\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>zlib.lib;python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\GeneratedFiles\$(ConfigurationName)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>.\GeneratedFiles</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\GeneratedFiles</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="addon\Addon_BollC.cpp" />
+    <ClCompile Include="addon\SnailAddonManager.cpp" />
+    <ClCompile Include="analyze\StockNatrueAnalyzer.cpp" />
+    <ClCompile Include="bid\StockBidData.cpp" />
+    <ClCompile Include="bid\StockBidEvalutor.cpp" />
+    <ClCompile Include="boosting\BoostingVar.cpp" />
+    <ClCompile Include="boosting\BoostParser.cpp" />
+    <ClCompile Include="candlestick\CandlestickArea.cpp" />
+    <ClCompile Include="candlestick\qcustomplot.cpp" />
+    <ClCompile Include="candlestick\StockProfitView.cpp" />
+    <ClCompile Include="candlestick\StockRealTimeView.cpp" />
+    <ClCompile Include="candlestick\StockTimeDataWidget.cpp" />
+    <ClCompile Include="candlestick\StrategyViewWidget.cpp" />
+    <ClCompile Include="common\abstractFileReader.cpp" />
+    <ClCompile Include="common\common.cpp" />
+    <ClCompile Include="common\FileUtils.cpp" />
+    <ClCompile Include="common\HighLighter.cpp" />
+    <ClCompile Include="common\LicenseAgreement.cpp" />
+    <ClCompile Include="common\UILoader.cpp" />
+    <ClCompile Include="ConfigurationParser.cpp" />
+    <ClCompile Include="config\ConfigItem.cpp" />
+    <ClCompile Include="config\GlobalConfigDialog.cpp" />
+    <ClCompile Include="crashhandler\CrashHandler.cpp" />
+    <ClCompile Include="DataProvider.cpp" />
+    <ClCompile Include="dialog\CandlestickViewDialog.cpp" />
+    <ClCompile Include="dialog\SnailAboutDlg.cpp" />
+    <ClCompile Include="dialog\SnailStockMsgBox.cpp" />
+    <ClCompile Include="dialog\StockCorDialog.cpp" />
+    <ClCompile Include="dialog\StockPoolCorDialog.cpp" />
+    <ClCompile Include="eval\cppEval.cpp" />
+    <ClCompile Include="expr\function\__Var_abs.cpp" />
+    <ClCompile Include="expr\function\__Var_absdev.cpp" />
+    <ClCompile Include="expr\function\__Var_ceil.cpp" />
+    <ClCompile Include="expr\function\__Var_distance.cpp" />
+    <ClCompile Include="expr\function\__Var_div.cpp" />
+    <ClCompile Include="expr\function\__Var_ema.cpp" />
+    <ClCompile Include="expr\function\__Var_floor.cpp" />
+    <ClCompile Include="expr\function\__Var_function.cpp" />
+    <ClCompile Include="expr\function\__Var_if.cpp" />
+    <ClCompile Include="expr\function\__Var_log.cpp" />
+    <ClCompile Include="expr\function\__Var_ma.cpp" />
+    <ClCompile Include="expr\function\__Var_max.cpp" />
+    <ClCompile Include="expr\function\__Var_maxVar.cpp" />
+    <ClCompile Include="expr\function\__Var_min.cpp" />
+    <ClCompile Include="expr\function\__Var_minus.cpp" />
+    <ClCompile Include="expr\function\__Var_minVar.cpp" />
+    <ClCompile Include="expr\function\__Var_multi.cpp" />
+    <ClCompile Include="expr\function\__Var_plus.cpp" />
+    <ClCompile Include="expr\function\__Var_plusVar.cpp" />
+    <ClCompile Include="expr\function\__Var_pow.cpp" />
+    <ClCompile Include="expr\function\__Var_prev.cpp" />
+    <ClCompile Include="expr\function\__Var_sma.cpp" />
+    <ClCompile Include="expr\function\__Var_stdev.cpp" />
+    <ClCompile Include="expr\function\__Var_variance.cpp" />
+    <ClCompile Include="expr\MetaEvalutor.cpp" />
+    <ClCompile Include="expr\MetaEvalutor_Per.cpp" />
+    <ClCompile Include="expr\StatementObject.cpp" />
+    <ClCompile Include="expr\VarManager.cpp" />
+    <ClCompile Include="expr\VarMeta.cpp" />
+    <ClCompile Include="finance\StockFinance.cpp" />
+    <ClCompile Include="fma\Fma_indicator.cpp" />
+    <ClCompile Include="gpdx\GPDX_tzmr.cpp" />
+    <ClCompile Include="gpdx\GPDX_spmr.cpp" />
+    <ClCompile Include="grid\GridTradeOutput.cpp" />
+    <ClCompile Include="grid\GridTrader.cpp" />
+    <ClCompile Include="grid\GridTradeWidget.cpp" />
+    <ClCompile Include="grid\GridTradeItemWidget.cpp" />
+    <ClCompile Include="grid\GridUnit.cpp" />
+    <ClCompile Include="indicator\ADStockIndiactor.cpp" />
+    <ClCompile Include="indicator\BiasIndicator.cpp" />
+    <ClCompile Include="indicator\BollIndicator.cpp" />
+    <ClCompile Include="indicator\BOPStockIndicator.cpp" />
+    <ClCompile Include="indicator\DMIIndicator.cpp" />
+    <ClCompile Include="indicator\EMAIndicator.cpp" />
+    <ClCompile Include="indicator\Indicator.cpp" />
+    <ClCompile Include="indicator\KDJIndicator.cpp" />
+    <ClCompile Include="indicator\MacdIndicator.cpp" />
+    <ClCompile Include="indicator\MaNIndicator.cpp" />
+    <ClCompile Include="indicator\MDStockIndicator.cpp" />
+    <ClCompile Include="indicator\NumericIndicator.cpp" />
+    <ClCompile Include="indicator\OBVStockIndicator.cpp" />
+    <ClCompile Include="indicator\PSYIndicator.cpp" />
+    <ClCompile Include="indicator\PVIStockIndicator.cpp" />
+    <ClCompile Include="indicator\RSIIndicator.cpp" />
+    <ClCompile Include="indicator\StockMACDScanner.cpp" />
+    <ClCompile Include="indicator\StockMaNScanner.cpp" />
+    <ClCompile Include="indicator\StockVolScanner.cpp" />
+    <ClCompile Include="indicator\StockWadIndicator.cpp" />
+    <ClCompile Include="indicator\TRIndicator.cpp" />
+    <ClCompile Include="indicator\VolNIndicator.cpp" />
+    <ClCompile Include="indicator\WRIndicator.cpp" />
+    <ClCompile Include="interface\StockParser.cpp" />
+    <ClCompile Include="interface\StockRealTimeInfo.cpp" />
+    <ClCompile Include="k\StockKAnalyzer.cpp" />
+    <ClCompile Include="lv2\LV2Config.cpp" />
+    <ClCompile Include="lv2\LV2Unit.cpp" />
+    <ClCompile Include="lv2\StockLV2Reader.cpp" />
+    <ClCompile Include="lv2\StockLV2Reader2019.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="math\ArraySolver.cpp" />
+    <ClCompile Include="math\generateStringListAndReplaceKeyByValue.cpp" />
+    <ClCompile Include="math\math.cpp" />
+    <ClCompile Include="math\UnitAlgo.cpp" />
+    <ClCompile Include="ObjectFactory.cpp" />
+    <ClCompile Include="pairtrade\PairTradeAlgo.cpp" />
+    <ClCompile Include="per\StockPerData.cpp" />
+    <ClCompile Include="python\PythonScript.cpp" />
+    <ClCompile Include="qt\QRoundProgressBar.cpp" />
+    <ClCompile Include="qwt\qwt_arrow_button.cpp" />
+    <ClCompile Include="qwt\qwt_clipper.cpp" />
+    <ClCompile Include="qwt\qwt_interval.cpp" />
+    <ClCompile Include="qwt\qwt_math.cpp" />
+    <ClCompile Include="qwt\qwt_painter.cpp" />
+    <ClCompile Include="qwt\qwt_point_polar.cpp" />
+    <ClCompile Include="qwt\qwt_text.cpp" />
+    <ClCompile Include="qwt\qwt_text_engine.cpp" />
+    <ClCompile Include="script\ScriptAddon.cpp" />
+    <ClCompile Include="script\ScriptAddonView.cpp" />
+    <ClCompile Include="script\ScriptManager.cpp" />
+    <ClCompile Include="sea\SeaScript.cpp" />
+    <ClCompile Include="sea\SeaScriptDialog.cpp" />
+    <ClCompile Include="shape\StockDuanTouChaDao.cpp" />
+    <ClCompile Include="shape\StockHengPanScanner.cpp" />
+    <ClCompile Include="shape\StockHengPanTuPo.cpp" />
+    <ClCompile Include="shape\StockMShape.cpp" />
+    <ClCompile Include="shape\StockUpwardTrendScanner.cpp" />
+    <ClCompile Include="shape\StockYiYangChuanSanXianScanner.cpp" />
+    <ClCompile Include="SnailAddonHost.cpp" />
+    <ClCompile Include="SnailAnalyst.cpp" />
+    <ClCompile Include="SnailApplication.cpp" />
+    <ClCompile Include="SnailContext.cpp" />
+    <ClCompile Include="Stock.cpp" />
+    <ClCompile Include="StockListDialog.cpp" />
+    <ClCompile Include="StockListView.cpp" />
+    <ClCompile Include="StockMapper.cpp" />
+    <ClCompile Include="StockScanner.cpp" />
+    <ClCompile Include="StockScriptEngine.cpp" />
+    <ClCompile Include="StockScriptList.cpp" />
+    <ClCompile Include="StockTargetCallbackImpl.cpp" />
+    <ClCompile Include="StockThreadTarget.cpp" />
+    <ClCompile Include="stockvaluation\StockEvalutionWidget.cpp" />
+    <ClCompile Include="stockvaluation\StockPBREvaluationWidget.cpp">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtConcurrent</IncludePath>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtConcurrent</IncludePath>
+    </ClCompile>
+    <ClCompile Include="stockvaluation\StockPEEvaluationWidget.cpp" />
+    <ClCompile Include="style\qcleanlooksstyle.cpp" />
+    <ClCompile Include="style\qstylehelper.cpp" />
+    <ClCompile Include="style\WidgetStyle.cpp" />
+    <ClCompile Include="tick\StockTickScaner.cpp" />
+    <ClCompile Include="tradewriter\StockTradeWriter.cpp" />
+    <ClCompile Include="view\Chart.cpp" />
+    <ClCompile Include="view\ChartView.cpp" />
+    <ClCompile Include="widget\AutoTextEdit.cpp" />
+    <ClCompile Include="widget\ExtendedTableWidget.cpp" />
+    <ClCompile Include="widget\FilterLineEdit.cpp" />
+    <ClCompile Include="widget\FilterTableHeader.cpp" />
+    <ClCompile Include="widget\LineDelegate.cpp" />
+    <ClCompile Include="widget\MapTableWidget.cpp" />
+    <ClCompile Include="widget\OutputWidget.cpp" />
+    <ClCompile Include="widget\StockListWidgetWithFilter.cpp" />
+    <ClCompile Include="zip\JlCompress.cpp" />
+    <ClCompile Include="zip\qioapi.cpp" />
+    <ClCompile Include="zip\quaadler32.cpp" />
+    <ClCompile Include="zip\quacrc32.cpp" />
+    <ClCompile Include="zip\quagzipfile.cpp" />
+    <ClCompile Include="zip\quaziodevice.cpp" />
+    <ClCompile Include="zip\quazip.cpp" />
+    <ClCompile Include="zip\quazipdir.cpp" />
+    <ClCompile Include="zip\quazipfile.cpp" />
+    <ClCompile Include="zip\quazipfileinfo.cpp" />
+    <ClCompile Include="zip\quazipnewinfo.cpp" />
+    <ClCompile Include="zip\unzip.c" />
+    <ClCompile Include="zip\zip.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SnailAnalyst.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="SnailAnalyst.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="widget\MapTableWidget.h" />
+    <QtMoc Include="analyze\StockNatureAnalyzer.h" />
+    <ClInclude Include="common\FileMapper.h" />
+    <ClInclude Include="finance\StockFinance.h" />
+    <QtMoc Include="grid\GridTradeWidget.h" />
+    <QtMoc Include="lv2\LV2Config.h" />
+    <ClInclude Include="lv2\LV2Color.h" />
+    <ClInclude Include="lv2\LV2Unit.h" />
+    <ClInclude Include="lv2\StockLV2Reader2019.h" />
+    <ClInclude Include="per\StockPerData.h" />
+    <QtMoc Include="python\PythonScript.h" />
+    <ClInclude Include="zip\crypt.h" />
+    <ClInclude Include="zip\ioapi.h" />
+    <ClInclude Include="zip\JlCompress.h" />
+    <ClInclude Include="zip\quaadler32.h" />
+    <ClInclude Include="zip\quachecksum32.h" />
+    <ClInclude Include="zip\quacrc32.h" />
+    <ClInclude Include="zip\quazip.h" />
+    <ClInclude Include="zip\quazipdir.h" />
+    <ClInclude Include="zip\unzip.h" />
+    <ClInclude Include="zip\zconf.h" />
+    <ClInclude Include="zip\zip.h" />
+    <ClInclude Include="zip\zlib.h" />
+    <QtMoc Include="zip\quazipfile.h" />
+    <ClInclude Include="zip\quazipfileinfo.h" />
+    <ClInclude Include="zip\quazipnewinfo.h" />
+    <ClInclude Include="zip\quazip_global.h" />
+    <QtMoc Include="zip\quaziodevice.h" />
+    <QtMoc Include="zip\quagzipfile.h" />
+    <CustomBuild Include="addon\Addon_Boll_C.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+    </CustomBuild>
+    <QtMoc Include="addon\SnailAddon.h">
+    </QtMoc>
+    <QtMoc Include="addon\SnailAddonManager.h">
+    </QtMoc>
+    <ClInclude Include="bid\StockBidData.h" />
+    <ClInclude Include="boosting\BoostingParser.h" />
+    <QtMoc Include="candlestick\StrategyViewWidget.h" />
+    <QtMoc Include="candlestick\StockTimeDataWidget.h" />
+    <ClInclude Include="common\DataWrapper.h" />
+    <ClInclude Include="common\FileUtils.h" />
+    <QtMoc Include="common\UILoader.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="ConfigurationParser.h" />
+    <ClInclude Include="config\ConfigItem.h" />
+    <ClInclude Include="config\ConfigItem_MACD_FSXS.h" />
+    <ClInclude Include="crashhandler\CrashHandler.h" />
+    <ClInclude Include="DataProvider.h" />
+    <QtMoc Include="dialog\StockCorDialog.h" />
+    <QtMoc Include="dialog\SnailAboutDlg.h" />
+    <QtMoc Include="dialog\SnailStockMsgBox.h" />
+    <QtMoc Include="dialog\StockPoolCorDialog.h" />
+    <QtMoc Include="dialog\CandlestickViewDialog.h" />
+    <ClInclude Include="expr\MetaEvalutor.h" />
+    <ClInclude Include="expr\StatementObject.h" />
+    <QtMoc Include="expr\VarManager.h" />
+    <ClInclude Include="expr\VarMeta.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+    </ClInclude>
+    <ClInclude Include="fma\Config_FMA_config.h" />
+    <ClInclude Include="fma\Fma_indicator.h" />
+    <ClInclude Include="gpdx\GPDX.h" />
+    <ClInclude Include="gpdx\GPDX_config.h" />
+    <ClInclude Include="interface\StockParser.h" />
+    <ClInclude Include="k\StockKAnalyzer.h" />
+    <ClInclude Include="math\ArraySolver.h" />
+    <ClInclude Include="math\math.h" />
+    <ClInclude Include="ObjectFactory.h" />
+    <ClInclude Include="pairtrade\PairTradeAlgo.h" />
+    <ClInclude Include="pairtrade\PairTradeConfig.h" />
+    <QtMoc Include="qt\QRoundProgressBar.h" />
+    <ClInclude Include="SnailAddonHost.h" />
+    <ClInclude Include="SnailContext.h" />
+    <ClInclude Include="Stock.h" />
+    <ClInclude Include="StockMapper.h" />
+    <ClInclude Include="StockTickScanner.h" />
+    <QtMoc Include="style\qcleanlooksstyle.h" />
+    <QtMoc Include="stockvaluation\StockValuationWidget.h" />
+    <QtMoc Include="stockvaluation\StockPBREvaluationWidget.h" />
+    <QtMoc Include="stockvaluation\StockPEEvaluationWidget.h" />
+    <ClInclude Include="style\qhexstring_p.h" />
+    <ClInclude Include="style\qstylecache_p.h" />
+    <ClInclude Include="style\qstylehelper_p.h" />
+    <ClInclude Include="style\WidgetStyle.h" />
+    <ClInclude Include="tradewriter\StockTradeWriter.h" />
+    <ClInclude Include="tradewriter\TradeReport.h" />
+    <QtMoc Include="widget\StockListWidgetWithFilter.h" />
+    <QtMoc Include="widget\FilterTableHeader.h" />
+    <QtMoc Include="widget\FilterLineEdit.h" />
+    <QtMoc Include="widget\ExtendedTableWidget.h" />
+    <QtMoc Include="StockThreadTarget.h" />
+    <QtMoc Include="StockShapeScanner.h" />
+    <QtMoc Include="StockScriptEngine.h" />
+    <QtMoc Include="StockListView.h" />
+    <QtMoc Include="SnailApplication.h" />
+    <QtMoc Include="Indicator.h" />
+    <ClInclude Include="eval\cppeval.h" />
+    <ClInclude Include="qwt\qwt_arrow_button.h" />
+    <ClInclude Include="qwt\qwt_clipper.h" />
+    <ClInclude Include="qwt\qwt_global.h" />
+    <ClInclude Include="qwt\qwt_interval.h" />
+    <ClInclude Include="qwt\qwt_math.h" />
+    <ClInclude Include="qwt\qwt_painter.h" />
+    <ClInclude Include="qwt\qwt_point_polar.h" />
+    <ClInclude Include="qwt\qwt_text.h" />
+    <ClInclude Include="qwt\qwt_text_engine.h" />
+    <QtMoc Include="view\Chart.h" />
+    <ClInclude Include="view\ChartView.h" />
+    <QtMoc Include="widget\AutoTextEdit.h" />
+    <ClInclude Include="widget\LineDelegate.h" />
+    <QtMoc Include="widget\OutputWidget.h" />
+    <QtMoc Include="script\ScriptManager.h" />
+    <ClInclude Include="sea\SeaScript.h" />
+    <QtMoc Include="sea\SeaScriptDialog.h" />
+    <QtMoc Include="config\GlobalConfigDialog.h" />
+    <QtMoc Include="candlestick\StockRealTimeView.h" />
+    <QtMoc Include="candlestick\StockProfitView.h" />
+    <QtMoc Include="candlestick\qcustomplot.h" />
+    <ClInclude Include="common\abstractFileReader.h" />
+    <ClInclude Include="common\common.h" />
+    <ClInclude Include="common\Sigslot.h" />
+    <ClInclude Include="math\UnitAlgo.h" />
+    <QtMoc Include="common\LicenseAgreement.h" />
+    <QtMoc Include="common\HighLighter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="logo.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,11 @@
+{
+    "_1": 5,
+    "_2": 50,
+    "_3": 120,
+    "_4": 800,
+    "count": 3,
+    "minLimitR": 1.7,
+    "path": "lv2",
+    "selectMode": true,
+    "usePython": true
+}

@@ -1,0 +1,8 @@
+command=ÂÝÐý½°
+type=common
+arguments=offset
+items=k.Ê®×ÖÐÇ,offset
+items=ohlc.increase,offset<value,1.6
+items=ohlc.increase,offset>value,-1.6
+items=ohlc.swing,1,offset>value,1.8
+items=ohlc.swing,2,offset>value,1.8

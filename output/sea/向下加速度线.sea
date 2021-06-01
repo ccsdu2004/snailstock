@@ -1,0 +1,12 @@
+command=向下加速度线
+type=common
+arguments=offset
+items=ohlc.increase,offset<ohlc.increase,offset-1
+items=ohlc.increase,offset-1<ohlc.increase,offset-2
+items=ohlc.increase,offset-2<ohlc.increase,offset-3
+items=ohlc.increase,offset-3<ohlc.increase,offset-4
+items=ohlc.increase,offset-4<value,0.0
+items=ohlc.close,offset<ohlc.close,offset-1
+items=ohlc.close,offset-1<ohlc.close,offset-2
+items=ohlc.close,offset-2<ohlc.close,offset-3
+items=ohlc.close,offset-3<ohlc.close,offset-4

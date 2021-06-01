@@ -1,0 +1,5 @@
+command=ÕÇµøÇø¼ä
+type=common
+arguments=min,max,offset
+items=ohlc.increase,offset>min
+items=ohlc.increase,offset<max

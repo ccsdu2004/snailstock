@@ -1,0 +1,8 @@
+{
+    "buyInOpen": true,
+    "cost": 0.002,
+    "decreaseBuy": 0.05,
+    "firstBuyPercent": 0.08,
+    "saleInClose": true,
+    "saleProfit": 0.05
+}

@@ -1,0 +1,19 @@
+﻿  SnailAnalyst.cpp
+d:\python27\include\pymath.h(22): warning C4273: “round”: dll 链接不一致
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\math.h(521): note: 参见“round”的前一个定义
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(F:\StockCode\snailstock-git\Win32\Release\SnailAnalyst.exe) does not match the Linker's OutputFile property value (F:\StockCode\snailstock-git\output\snail.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(SnailAnalyst) does not match the Linker's OutputFile property value (snail). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+Qt5UiTools.lib(abstractformbuilder.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(abstractformbuilder.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(formbuilder.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(formbuilder.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(ui4.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(ui4.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(properties.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(properties.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(formbuilderextra.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(formbuilderextra.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(resourcebuilder.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(resourcebuilder.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(textbuilder.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(textbuilder.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(quiloader.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(quiloader.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(moc_properties_p.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(moc_properties_p.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(moc_quiloader.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(moc_quiloader.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+Qt5UiTools.lib(Qt5UiTools_pch.obj) : warning LNK4099: 未找到 PDB“Qt5UiTools.pdb”(使用“Qt5UiTools.lib(Qt5UiTools_pch.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\Qt5UiTools.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qtmain.lib(qtmain_win.obj) : warning LNK4099: 未找到 PDB“qtmain.pdb”(使用“qtmain.lib(qtmain_win.obj)”或在“F:\StockCode\snailstock-git\Win32\Release\qtmain.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  SnailAnalyst.vcxproj -> F:\StockCode\snailstock-git\Win32\Release\SnailAnalyst.exe
+  SnailAnalyst.vcxproj -> F:\StockCode\snailstock-git\Win32\Release\SnailAnalyst.pdb (Full PDB)

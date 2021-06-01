@@ -1,0 +1,5 @@
+command=MACD½ð²æ
+type=common
+arguments=offset
+items=macd.diff,offset>macd.dea,offset
+items=macd.diff,offset-1<macd.dea,offset-1

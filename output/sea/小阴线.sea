@@ -1,0 +1,5 @@
+command=Ğ¡ÒõÏß
+type=common
+arguments=offset
+items=ohlc.swing,3,offset<value,0
+items=ohlc.swing,3,offset>value,-1.55

@@ -1,0 +1,5 @@
+command=揉搓线
+type=common
+arguments=offset
+items=k.锤子线,offset-1
+items=k.倒锤子线,offset

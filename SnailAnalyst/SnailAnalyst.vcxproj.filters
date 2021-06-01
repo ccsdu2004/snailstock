@@ -1,0 +1,1029 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{a3fb490a-8faa-4cd8-bfd6-fe72bbf94a3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{0136ad29-27aa-487e-9cf4-60af3a653cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\indicator">
+      <UniqueIdentifier>{b593da36-6ab3-4107-b88c-4c37ac0a2230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interface">
+      <UniqueIdentifier>{d228ac88-8d0c-406a-8101-ccdbbb2b9d6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\boosting">
+      <UniqueIdentifier>{c1788589-6e51-45fe-92f5-c9b26d890cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\candlestick">
+      <UniqueIdentifier>{2dfc467c-af82-40de-a1b4-3826f6c2b381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{6e211be0-dc11-40a6-988a-f03f07e88b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crashhandler">
+      <UniqueIdentifier>{c014cd6e-630b-40c4-9bbc-7c1a802fc72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\eval">
+      <UniqueIdentifier>{3a99b215-88b6-4ba8-bbbb-e80e1f0ec948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lv2">
+      <UniqueIdentifier>{a3537875-1bf8-4845-8582-e587690b03e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\qwt">
+      <UniqueIdentifier>{3c7cf831-b6d2-41f8-9bea-c5ac22f501d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sea">
+      <UniqueIdentifier>{7c0fdf60-e388-4d4c-b905-7e7949813c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\script">
+      <UniqueIdentifier>{70d41675-e2e1-4ea4-8f67-84f6909fde1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tick">
+      <UniqueIdentifier>{226e5f63-1e0c-4959-b87c-3dd214f4f95b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shape">
+      <UniqueIdentifier>{e4a90795-32b3-43bc-92c5-0bfddba95b41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\widget">
+      <UniqueIdentifier>{5531d66f-4351-43cc-8391-c794e3d507fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\expr">
+      <UniqueIdentifier>{8f78da20-b8b7-4adc-b0c3-8dca7ece7773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bid">
+      <UniqueIdentifier>{85670cb2-7804-4ac5-b849-66129155caa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tradewriter">
+      <UniqueIdentifier>{ac8ac653-c600-4fc3-bc7f-e1127d895f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\k">
+      <UniqueIdentifier>{12b2ece2-1078-495e-ae62-5b8907b9886c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\style">
+      <UniqueIdentifier>{6ad26a24-03a9-45d3-9388-19dd165c00bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dialog">
+      <UniqueIdentifier>{37398d5b-c286-47a0-82ad-abbe93d4789d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\view">
+      <UniqueIdentifier>{633f7ed9-f818-4738-b57c-144f47f2cf8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pairtrade">
+      <UniqueIdentifier>{8dc89c3d-afe1-459d-8f5e-7f5cdbb5e01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\expr\function">
+      <UniqueIdentifier>{28071dce-1b35-49d6-8c19-e6f7f7e067a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fma">
+      <UniqueIdentifier>{d9bde0b3-2a20-4a3a-af80-6e9477cc6b08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\qt">
+      <UniqueIdentifier>{82bd284e-ef83-4d66-ab3d-2ef22f69ed7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gpdx">
+      <UniqueIdentifier>{ee3f68cc-e222-47dc-aeca-7b1e8eb4e076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\addon">
+      <UniqueIdentifier>{8ea844fe-ac3e-4840-94ae-d0f48b0de418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stockvaluation">
+      <UniqueIdentifier>{051fa86d-c89e-4b9f-967b-46149da3ab2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zip">
+      <UniqueIdentifier>{7f63cbc5-a448-458d-8d95-ed7f54dd0480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\finance">
+      <UniqueIdentifier>{90297af5-b882-4486-936b-62239935b04b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\analyze">
+      <UniqueIdentifier>{207fbdcb-7eb5-4a38-b02d-5701c02658e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\grid">
+      <UniqueIdentifier>{36d23ea6-7ea7-4388-b690-d5333621c17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Source Files\per">
+      <UniqueIdentifier>{5a2d5242-1cdb-405f-92de-b3a42516e931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\python">
+      <UniqueIdentifier>{bb644b8c-890d-400a-a7eb-30bf990e30f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnailAnalyst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\abstractFileReader.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\common.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\HighLighter.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\LicenseAgreement.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="math\math.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\UnitAlgo.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\BiasIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\BollIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\DMIIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\EMAIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\Indicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\KDJIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\MacdIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\MaNIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\NumericIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\PSYIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\RSIIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\StockMACDScanner.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\StockMaNScanner.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\StockVolScanner.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\VolNIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\WRIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\StockRealTimeInfo.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="boosting\BoostParser.cpp">
+      <Filter>Source Files\boosting</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestick\qcustomplot.cpp">
+      <Filter>Source Files\candlestick</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestick\StockRealTimeView.cpp">
+      <Filter>Source Files\candlestick</Filter>
+    </ClCompile>
+    <ClCompile Include="config\ConfigItem.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="crashhandler\CrashHandler.cpp">
+      <Filter>Source Files\crashhandler</Filter>
+    </ClCompile>
+    <ClCompile Include="eval\cppEval.cpp">
+      <Filter>Source Files\eval</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt\qwt_arrow_button.cpp">
+      <Filter>Source Files\qwt</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt\qwt_clipper.cpp">
+      <Filter>Source Files\qwt</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt\qwt_interval.cpp">
+      <Filter>Source Files\qwt</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt\qwt_math.cpp">
+      <Filter>Source Files\qwt</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt\qwt_painter.cpp">
+      <Filter>Source Files\qwt</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt\qwt_point_polar.cpp">
+      <Filter>Source Files\qwt</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt\qwt_text.cpp">
+      <Filter>Source Files\qwt</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt\qwt_text_engine.cpp">
+      <Filter>Source Files\qwt</Filter>
+    </ClCompile>
+    <ClCompile Include="sea\SeaScript.cpp">
+      <Filter>Source Files\sea</Filter>
+    </ClCompile>
+    <ClCompile Include="sea\SeaScriptDialog.cpp">
+      <Filter>Source Files\sea</Filter>
+    </ClCompile>
+    <ClCompile Include="script\ScriptAddon.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\ScriptAddonView.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\ScriptManager.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="tick\StockTickScaner.cpp">
+      <Filter>Source Files\tick</Filter>
+    </ClCompile>
+    <ClCompile Include="shape\StockDuanTouChaDao.cpp">
+      <Filter>Source Files\shape</Filter>
+    </ClCompile>
+    <ClCompile Include="shape\StockHengPanScanner.cpp">
+      <Filter>Source Files\shape</Filter>
+    </ClCompile>
+    <ClCompile Include="shape\StockHengPanTuPo.cpp">
+      <Filter>Source Files\shape</Filter>
+    </ClCompile>
+    <ClCompile Include="shape\StockMShape.cpp">
+      <Filter>Source Files\shape</Filter>
+    </ClCompile>
+    <ClCompile Include="shape\StockUpwardTrendScanner.cpp">
+      <Filter>Source Files\shape</Filter>
+    </ClCompile>
+    <ClCompile Include="shape\StockYiYangChuanSanXianScanner.cpp">
+      <Filter>Source Files\shape</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnailAddonHost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnailApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnailContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StockListDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StockListView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StockScanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StockScriptEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StockScriptList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StockTargetCallbackImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StockThreadTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\ExtendedTableWidget.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\FilterLineEdit.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\FilterTableHeader.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\StockListWidgetWithFilter.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestick\StrategyViewWidget.cpp">
+      <Filter>Source Files\candlestick</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\LineDelegate.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestick\StockProfitView.cpp">
+      <Filter>Source Files\candlestick</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\MetaEvalutor.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\StatementObject.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="bid\StockBidData.cpp">
+      <Filter>Source Files\bid</Filter>
+    </ClCompile>
+    <ClCompile Include="bid\StockBidEvalutor.cpp">
+      <Filter>Source Files\bid</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\MetaEvalutor_Per.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="tradewriter\StockTradeWriter.cpp">
+      <Filter>Source Files\tradewriter</Filter>
+    </ClCompile>
+    <ClCompile Include="k\StockKAnalyzer.cpp">
+      <Filter>Source Files\k</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\VarMeta.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\ADStockIndiactor.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\OBVStockIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\MDStockIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\BOPStockIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\PVIStockIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\StockWadIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="style\qcleanlooksstyle.cpp">
+      <Filter>Source Files\style</Filter>
+    </ClCompile>
+    <ClCompile Include="style\qstylehelper.cpp">
+      <Filter>Source Files\style</Filter>
+    </ClCompile>
+    <ClCompile Include="common\FileUtils.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="indicator\TRIndicator.cpp">
+      <Filter>Source Files\indicator</Filter>
+    </ClCompile>
+    <ClCompile Include="style\WidgetStyle.cpp">
+      <Filter>Source Files\style</Filter>
+    </ClCompile>
+    <ClCompile Include="config\GlobalConfigDialog.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\StockCorDialog.cpp">
+      <Filter>Source Files\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\SnailAboutDlg.cpp">
+      <Filter>Source Files\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\SnailStockMsgBox.cpp">
+      <Filter>Source Files\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\StockPoolCorDialog.cpp">
+      <Filter>Source Files\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\StockParser.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestick\StockTimeDataWidget.cpp">
+      <Filter>Source Files\candlestick</Filter>
+    </ClCompile>
+    <ClCompile Include="StockMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view\ChartView.cpp">
+      <Filter>Source Files\view</Filter>
+    </ClCompile>
+    <ClCompile Include="view\Chart.cpp">
+      <Filter>Source Files\view</Filter>
+    </ClCompile>
+    <ClCompile Include="pairtrade\PairTradeAlgo.cpp">
+      <Filter>Source Files\pairtrade</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ArraySolver.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\generateStringListAndReplaceKeyByValue.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\VarManager.cpp">
+      <Filter>Source Files\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_abs.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_ma.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_minus.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_prev.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_absdev.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_stdev.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_variance.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_ceil.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_floor.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_distance.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_div.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_function.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_multi.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_log.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_pow.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_max.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_min.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_maxVar.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_minVar.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_plusVar.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_if.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_plus.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_ema.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="expr\function\__Var_sma.cpp">
+      <Filter>Source Files\expr\function</Filter>
+    </ClCompile>
+    <ClCompile Include="boosting\BoostingVar.cpp">
+      <Filter>Source Files\boosting</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\AutoTextEdit.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="fma\Fma_indicator.cpp">
+      <Filter>Source Files\fma</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\QRoundProgressBar.cpp">
+      <Filter>Source Files\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\CandlestickViewDialog.cpp">
+      <Filter>Source Files\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="gpdx\GPDX_spmr.cpp">
+      <Filter>Source Files\gpdx</Filter>
+    </ClCompile>
+    <ClCompile Include="gpdx\GPDX_tzmr.cpp">
+      <Filter>Source Files\gpdx</Filter>
+    </ClCompile>
+    <ClCompile Include="candlestick\CandlestickArea.cpp">
+      <Filter>Source Files\candlestick</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\Addon_BollC.cpp">
+      <Filter>Source Files\addon</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\SnailAddonManager.cpp">
+      <Filter>Source Files\addon</Filter>
+    </ClCompile>
+    <ClCompile Include="stockvaluation\StockEvalutionWidget.cpp">
+      <Filter>Source Files\stockvaluation</Filter>
+    </ClCompile>
+    <ClCompile Include="stockvaluation\StockPBREvaluationWidget.cpp">
+      <Filter>Source Files\stockvaluation</Filter>
+    </ClCompile>
+    <ClCompile Include="common\UILoader.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\OutputWidget.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="stockvaluation\StockPEEvaluationWidget.cpp">
+      <Filter>Source Files\stockvaluation</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\JlCompress.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\qioapi.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quaadler32.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quacrc32.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quagzipfile.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quaziodevice.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quazip.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quazipdir.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quazipfile.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quazipfileinfo.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\quazipnewinfo.cpp">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\unzip.c">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\zip.c">
+      <Filter>Source Files\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\MapTableWidget.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\StockFinance.cpp">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="analyze\StockNatrueAnalyzer.cpp">
+      <Filter>Source Files\analyze</Filter>
+    </ClCompile>
+    <ClCompile Include="grid\GridTradeItemWidget.cpp">
+      <Filter>Source Files\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="grid\GridTradeWidget.cpp">
+      <Filter>Source Files\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="grid\GridTrader.cpp">
+      <Filter>Source Files\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="grid\GridTradeOutput.cpp">
+      <Filter>Source Files\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="grid\GridUnit.cpp">
+      <Filter>Source Files\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2\StockLV2Reader2019.cpp">
+      <Filter>Source Files\lv2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2\LV2Config.cpp">
+      <Filter>Source Files\lv2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2\LV2Unit.cpp">
+      <Filter>Source Files\lv2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2\StockLV2Reader.cpp">
+      <Filter>Source Files\lv2</Filter>
+    </ClCompile>
+    <ClCompile Include="per\StockPerData.cpp">
+      <Filter>Source Files\per</Filter>
+    </ClCompile>
+    <ClCompile Include="python\PythonScript.cpp">
+      <Filter>Source Files\python</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SnailAnalyst.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\HighLighter.h">
+      <Filter>Source Files\common</Filter>
+    </QtMoc>
+    <QtMoc Include="common\LicenseAgreement.h">
+      <Filter>Source Files\common</Filter>
+    </QtMoc>
+    <QtMoc Include="candlestick\qcustomplot.h">
+      <Filter>Source Files\candlestick</Filter>
+    </QtMoc>
+    <QtMoc Include="candlestick\StockProfitView.h">
+      <Filter>Source Files\candlestick</Filter>
+    </QtMoc>
+    <QtMoc Include="candlestick\StockRealTimeView.h">
+      <Filter>Source Files\candlestick</Filter>
+    </QtMoc>
+    <QtMoc Include="sea\SeaScriptDialog.h">
+      <Filter>Source Files\sea</Filter>
+    </QtMoc>
+    <QtMoc Include="script\ScriptManager.h">
+      <Filter>Source Files\script</Filter>
+    </QtMoc>
+    <QtMoc Include="Indicator.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SnailApplication.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StockListView.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StockScriptEngine.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StockShapeScanner.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StockThreadTarget.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\ExtendedTableWidget.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\FilterLineEdit.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\FilterTableHeader.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\StockListWidgetWithFilter.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="candlestick\StrategyViewWidget.h">
+      <Filter>Source Files\candlestick</Filter>
+    </QtMoc>
+    <QtMoc Include="style\qcleanlooksstyle.h">
+      <Filter>Source Files\style</Filter>
+    </QtMoc>
+    <QtMoc Include="config\GlobalConfigDialog.h">
+      <Filter>Source Files\config</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\StockCorDialog.h">
+      <Filter>Source Files\dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\SnailAboutDlg.h">
+      <Filter>Source Files\dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\SnailStockMsgBox.h">
+      <Filter>Source Files\dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\StockPoolCorDialog.h">
+      <Filter>Source Files\dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="candlestick\StockTimeDataWidget.h">
+      <Filter>Source Files\candlestick</Filter>
+    </QtMoc>
+    <QtMoc Include="view\Chart.h">
+      <Filter>Source Files\view</Filter>
+    </QtMoc>
+    <QtMoc Include="expr\VarManager.h">
+      <Filter>Source Files\expr</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\AutoTextEdit.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\QRoundProgressBar.h">
+      <Filter>Source Files\qt</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\CandlestickViewDialog.h">
+      <Filter>Source Files\dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="stockvaluation\StockValuationWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stockvaluation\StockPBREvaluationWidget.h">
+      <Filter>Source Files\stockvaluation</Filter>
+    </QtMoc>
+    <QtMoc Include="common\UILoader.h">
+      <Filter>Source Files\common</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\OutputWidget.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="stockvaluation\StockPEEvaluationWidget.h">
+      <Filter>Source Files\stockvaluation</Filter>
+    </QtMoc>
+    <QtMoc Include="zip\quagzipfile.h">
+      <Filter>Source Files\zip</Filter>
+    </QtMoc>
+    <QtMoc Include="zip\quaziodevice.h">
+      <Filter>Source Files\zip</Filter>
+    </QtMoc>
+    <QtMoc Include="zip\quazipfile.h">
+      <Filter>Source Files\zip</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\MapTableWidget.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="analyze\StockNatureAnalyzer.h">
+      <Filter>Source Files\analyze</Filter>
+    </QtMoc>
+    <QtMoc Include="grid\GridTradeWidget.h">
+      <Filter>Source Files\grid</Filter>
+    </QtMoc>
+    <QtMoc Include="lv2\LV2Config.h">
+      <Filter>Source Files\lv2</Filter>
+    </QtMoc>
+    <QtMoc Include="python\PythonScript.h">
+      <Filter>Source Files\python</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="SnailAnalyst.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\abstractFileReader.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\common.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Sigslot.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="math\UnitAlgo.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="boosting\BoostingParser.h">
+      <Filter>Source Files\boosting</Filter>
+    </ClInclude>
+    <ClInclude Include="config\ConfigItem.h">
+      <Filter>Source Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\ConfigItem_MACD_FSXS.h">
+      <Filter>Source Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="crashhandler\CrashHandler.h">
+      <Filter>Source Files\crashhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="eval\cppeval.h">
+      <Filter>Source Files\eval</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_arrow_button.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_clipper.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_global.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_interval.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_math.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_painter.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_point_polar.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_text.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt\qwt_text_engine.h">
+      <Filter>Source Files\qwt</Filter>
+    </ClInclude>
+    <ClInclude Include="sea\SeaScript.h">
+      <Filter>Source Files\sea</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationParser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataProvider.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnailAddonHost.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnailContext.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StockTickScanner.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\LineDelegate.h">
+      <Filter>Source Files\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="expr\MetaEvalutor.h">
+      <Filter>Source Files\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="expr\StatementObject.h">
+      <Filter>Source Files\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bid\StockBidData.h">
+      <Filter>Source Files\bid</Filter>
+    </ClInclude>
+    <ClInclude Include="tradewriter\StockTradeWriter.h">
+      <Filter>Source Files\tradewriter</Filter>
+    </ClInclude>
+    <ClInclude Include="k\StockKAnalyzer.h">
+      <Filter>Source Files\k</Filter>
+    </ClInclude>
+    <ClInclude Include="tradewriter\TradeReport.h">
+      <Filter>Source Files\tradewriter</Filter>
+    </ClInclude>
+    <ClInclude Include="math\math.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="style\qhexstring_p.h">
+      <Filter>Source Files\style</Filter>
+    </ClInclude>
+    <ClInclude Include="style\qstylecache_p.h">
+      <Filter>Source Files\style</Filter>
+    </ClInclude>
+    <ClInclude Include="style\qstylehelper_p.h">
+      <Filter>Source Files\style</Filter>
+    </ClInclude>
+    <ClInclude Include="common\DataWrapper.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\FileUtils.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="style\WidgetStyle.h">
+      <Filter>Source Files\style</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\StockParser.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="StockMapper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="view\ChartView.h">
+      <Filter>Source Files\view</Filter>
+    </ClInclude>
+    <ClInclude Include="pairtrade\PairTradeConfig.h">
+      <Filter>Source Files\pairtrade</Filter>
+    </ClInclude>
+    <ClInclude Include="pairtrade\PairTradeAlgo.h">
+      <Filter>Source Files\pairtrade</Filter>
+    </ClInclude>
+    <ClInclude Include="math\ArraySolver.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="expr\VarMeta.h">
+      <Filter>Source Files\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="fma\Config_FMA_config.h">
+      <Filter>Source Files\fma</Filter>
+    </ClInclude>
+    <ClInclude Include="fma\Fma_indicator.h">
+      <Filter>Source Files\fma</Filter>
+    </ClInclude>
+    <ClInclude Include="gpdx\GPDX_config.h">
+      <Filter>Source Files\gpdx</Filter>
+    </ClInclude>
+    <ClInclude Include="gpdx\GPDX.h">
+      <Filter>Source Files\gpdx</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\crypt.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\ioapi.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\JlCompress.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\quaadler32.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\quachecksum32.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\quacrc32.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\quazip.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\quazip_global.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\quazipdir.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\quazipfileinfo.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\quazipnewinfo.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\unzip.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\zconf.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\zip.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\zlib.h">
+      <Filter>Source Files\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="finance\StockFinance.h">
+      <Filter>Source Files\finance</Filter>
+    </ClInclude>
+    <ClInclude Include="lv2\StockLV2Reader2019.h">
+      <Filter>Source Files\lv2</Filter>
+    </ClInclude>
+    <ClInclude Include="lv2\LV2Unit.h">
+      <Filter>Source Files\lv2</Filter>
+    </ClInclude>
+    <ClInclude Include="common\FileMapper.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lv2\LV2Color.h">
+      <Filter>Source Files\lv2</Filter>
+    </ClInclude>
+    <ClInclude Include="per\StockPerData.h">
+      <Filter>Source Files\per</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="logo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="addon\Addon_Boll_C.h">
+      <Filter>Source Files\addon</Filter>
+    </CustomBuild>
+    <QtMoc Include="addon\SnailAddon.h">
+      <Filter>Source Files\addon</Filter>
+    </QtMoc>
+    <QtMoc Include="addon\SnailAddonManager.h">
+      <Filter>Source Files\addon</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

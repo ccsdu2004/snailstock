@@ -1,0 +1,5 @@
+command=’Ê—ÙºŸ“ı
+type=common
+arguments=offset
+items=ohlc.close,offset<ohlc.open,offset
+items=ohlc.close,offset>ohlc.close,offset-1

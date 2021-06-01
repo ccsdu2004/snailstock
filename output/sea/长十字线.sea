@@ -1,0 +1,9 @@
+command=长十字线
+type=common
+arguments=offset
+items=k.十字星,offset
+items=k.光身,offset
+items=ohlc.increase,offset<value,2.5
+items=ohlc.increase,offset>value,-2.5
+items=ohlc.swing,1,offset>value,2.5
+items=ohlc.swing,2,offset>value,2.5

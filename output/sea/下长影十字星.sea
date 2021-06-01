@@ -1,0 +1,5 @@
+command=下长影十字星
+type=common
+arguments=offset
+items=k.十字星,offset
+items=ohlc.foot,offset>ohlc.head,offset

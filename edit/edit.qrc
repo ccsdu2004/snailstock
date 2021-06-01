@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>data/edit.png</file>
+        <file>data/qt_zh_CN.qm</file>
+        <file>data/pool.json</file>
+    </qresource>
+</RCC>
